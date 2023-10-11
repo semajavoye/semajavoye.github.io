@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaja Voye IT-Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <img src="logo.png" alt="">
+            <h1>Semaja Voy&eacute;</h1>
+        </div>
+        <p>Websiten erstellen und verbessern. Das bin ich!</p>
+        <nav>
+            <ul>
+                <li><a href="#über-mich">Über mich</a></li>
+                <li><a href="#meine-dienstleistungen">Meine Dienstleistungen</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#kenntnisse">Kenntisse</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#preislage">Preislage</a></li>
+                <li><a href="#haftungsausschluss">Haftungsausschluss</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="über-mich">
+            <h2>Über mich</h2>
+            <p id="text">Ich bin ein [Oh, ein Fehler!]-jähriger Entwickler aus Deutschland mit dem Talent, kostengünstige
+                und unkomplizierte Webseiten für Sie zu erstellen. Ich zeichne mich durch eine schnelle Arbeitsweise aus
+                und beherrsche sämtliche Aspekte, angefangen beim Design bis hin zur Optimierung. Lassen Sie mich Ihre
+                Online-Präsenz auf das nächste Level heben!</p>
+
+
+            <!-- Geburtsdatumszähler weil wieso nicht :D -->
+            <script>
+                const geburtsdatum = new Date('2008-10-31');
+                const aktuellesDatum = new Date();
+                const zeitunterschied = aktuellesDatum - geburtsdatum;
+                const millisekundenProJahr = 1000 * 60 * 60 * 24 * 365.25;
+                const alter = Math.floor(zeitunterschied / millisekundenProJahr);
+                const alterTextElement = document.getElementById('text');
+                alterTextElement.innerHTML = alterTextElement.innerHTML.replace('[Oh, ein Fehler!]', alter);
+            </script>
+
+        </section>
+
+        <section id="meine-dienstleistungen">
+            <h2>Meine Dienstleistungen</h2>
+            <li>Website-Erstellung</li>
+            <li>Webdesign</li>
+            <li>Responsive Design</li>
+            <li>Optimierung</li>
+            <li>Hosting Beratung</li>
+            <li>Vieles weitere auf Anfrage</li>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            Erstellte Wesbiten:
+            <li><a href="https://tooluniverse.de">Tooluniverse</a></li>
+            <li><a href="#portfolio">Questopia (nicht öffentich!)</a></li>
+        </section>
+
+        <section id="kenntnisse">
+            <h2>Kenntisse</h2>
+            <li><a href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language">HTML</a></li>
+            <li><a href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a></li>
+            <li><a href="https://de.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+            <li><a href="https://de.wikipedia.org/wiki/PHP">PHP</a></li>
+            <li><a href="https://de.wikipedia.org/wiki/SQL">SQL/Datenbanken</a></li>
+            <li><a href="https://de.wikipedia.org/wiki/Webhosting">Webhosting</a></li>
+            <li><a href="https://de.wikipedia.org/wiki/Server">Server jeglicher Art</a></li>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Kontaktieren Sie mich, um ein unverbindliches Angebot zu erhalten.</p>
+            <p>E-Mail: <a href="mailto:semaja.voye5_8@gmx.de">semaja.voye5_8@gmx.de</a></p>
+            <p>Telefon: <a href="tel:+4915226825337">+4915226825337</a></p>
+        </section>
+
+        <section id="preislage">
+            <h2>Preislage</h2>
+            <p>Je nach Aufwand und Designanforderungen variieren meine Preise für die Erstellung einer Website zwischen
+                15 und 50 Euro oder mehr!</p>
+        </section>
+
+        <section id="haftungsausschluss">
+            <h2>Haftungsausschluss</h2>
+            <p>Jede Website wird von mir persönlich erstellt und liegt nach Übergabe an den Kunden nichtmehr unter
+                meiner Haftung! Das bedeutet, dass ich ab diesem Zeitpunkt keine Verantwortung mehr für etwaige Anliegen
+                oder Probleme trage. Die Haftung liegt dann beim Betreiber, also beim Kunden selbst. Die Kopierrechte
+                unterliegen somit dann auch dem Kunden. Auf jeder meiner Websiten baue ich im Impressum einen kleinen
+                Text mit dem Inhalt "Created and Designed by <a href="#">Semaja Voy&eacute;</a>" ein. Dieser Text kann
+                nach belieben entfernt werden! Jedoch würde es mich freuen wenn dieser erhalten bleibt, um mich ein bisschen zu supporten :D!</p>
+        </section>
+
+
+
+
+    </main>
+
+
+    <footer>
+        <p>&copy; Semaja Voy&eacute; 2023. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+
+</html>
